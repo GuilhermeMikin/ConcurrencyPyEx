@@ -11,7 +11,7 @@ def do_something(seconds):
 
 
 with ThreadPoolExecutor() as executor:
-    secs = [5, 4, 3, 2, 1]
+    secs = [5, 4, 3, 2, 1, 1, 1, 1, 1, 1]
     results = [executor.submit(do_something, sec) for sec in secs]
     
     for f in as_completed(results):
